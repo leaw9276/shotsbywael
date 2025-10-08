@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wael Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #000;
+      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #d4af37;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-bottom: 2rem;
+      filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); }
+      to { filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.9)); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #d4af37;
+      border: 1px solid #d4af37;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      background: rgba(212, 175, 55, 0.05);
+    }
+
+    a:hover {
+      background: linear-gradient(90deg, #d4af37, #b8860b);
+      color: #000;
+      box-shadow: 0 0 20px #d4af37;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    .divider {
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      margin: 2rem 0;
+      border-radius: 2px;
+      box-shadow: 0 0 10px #d4af37;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wael Photography</h1>
+    <p>Turning moments into timeless art — based in Aley, Lebanon.</p>
+    <div class="divider"></div>
+  </header>
+
+  <section class="contact" id="contact">
+    <a href="https://www.instagram.com/shotsbywael?igsh=NGVyZGRjbzQ1ZzM5&utm_source=qr" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="icon"> Instagram: @shotsbywael
+    </a>
+    <a href="https://wa.me/96171755470" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icon"> WhatsApp: +961 71 755 470
+    </a>
+    <p>Aley, Lebanon</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wael Photography — All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
